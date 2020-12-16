@@ -10,5 +10,5 @@ do {
     } else {
         resultado = resultado + numero;
     }
-} while (confirm("Desea continuar ingresando cadenas?"));
+} while (confirm("Desea continuar ingresando numeros?"));
 document.write("La suma total de los numeros ingresados es: " + resultado)

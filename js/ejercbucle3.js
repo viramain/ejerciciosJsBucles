@@ -9,5 +9,5 @@ do {
     } else {
         resultado = resultado + " - " + cadena;
     }
-} while (confirm("Desea continuar ingresando cadenas?"));
+} while (confirm("Desea continuar ingresando una cadena?"));
 document.write("El Resultado es: " + resultado)
