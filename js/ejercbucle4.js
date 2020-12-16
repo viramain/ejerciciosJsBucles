@@ -2,16 +2,13 @@
 // Si no es un número deberá indicarse con un« alert» y seguir pidiendo números.
 // Al salir con“ cancelar” deberá indicarse la suma total de los números introducidos.
 
-let suma = 0
-let numero = parseInt(prompt("Ingrese numero:"));
-window.confirm("Esta seguro que desea continuar?")
-
-while (confirm()) {
-    numero = parseInt(prompt("Ingrese numero:"));
+let resultado = 0;
+do {
+    let numero = parseInt(prompt("Ingrese un numero:"));
     if (isNaN(numero)) {
-        window.alert("No es un numero");
-        numero = 0
+        window.alert("No corresponde a un numero. Ingrese nuevamente.");
+    } else {
+        resultado = resultado + numero;
     }
-    suma = suma + numero;
-}
-document.write("El Resultado es: " + suma)
+} while (confirm("Desea continuar ingresando cadenas?"));
+document.write("La suma total de los numeros ingresados es: " + resultado)
