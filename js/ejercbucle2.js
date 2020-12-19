@@ -47,6 +47,8 @@ if (nota >= 0 && nota <= 10) {
         case 10:
             window.alert("sobresaliente")
             break;
+        default:
+            document.write("el usuario ingreso una opcion incorrecta<br>")
     }
 } else {
     window.alert("Numero Erroneo. Introduce un número válido")
